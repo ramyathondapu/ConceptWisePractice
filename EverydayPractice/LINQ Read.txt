@@ -1,0 +1,61 @@
+
+
+LINQ is a query language used to query the collection datatypes like arraylist, linkedlist and it is diffrent than database query lanuage
+
+example:
+
+arraylist a= new arraylist{"Ramya", "sita", "geeta","inku","pinku","tinku"};
+
+var names = from name in a
+            where name.contains('r')
+            select name;
+it will return a list of names wich have r in it we can achieve it using if condition also but LINQ is easy readable, reusable, less number of lines
+
+
+...........
+
+var names= a.where(name=>name.contains('r')).ToArray();
+var name= a.where(name=>name=="ramya").firstorDefault();
+
+var name = a.where(name=>name==="sita").select();
+
+.............
+
+Delegates:
+
+these are reference type for methods delegates will have same syntax as method have
+return type and parameters all
+
+Delegate void add(int a, int b);
+
+now this delegate can be refer to any of the method which is having same syntax.
+
+like
+
+void sub(int a, int b){
+return a+b;
+}
+
+
+add a= sub;
+...
+add a= new add(sub);
+
+....
+
+anonymous methods
+
+add a= delegate(int a,int b)
+         {
+         console.wl(a+b);
+         }
+
+.................
+
+lambda expression
+
+add d= (a,b)=>{a+b};
+
+
+................
+

@@ -1,0 +1,38 @@
+
+
+Abstraction is a process where the implementation of the code is not visible for the end user
+
+1). to declare a class as abstract class use the Keyword Absract
+2). In a abstract class we can have both abstract and concrete methods
+3). the abstract class can not be instantiated with new() keyword
+4). it can not be sealed
+5). the abstract methods in this class can be override in child class
+
+
+
+Example:
+
+abstract class example1{
+
+public int area(int a){
+return a*a;
+}
+
+public abstract suuqre(int a);
+}
+
+public class child : example{
+public override square(int a){
+return Math.root(a);
+}
+
+public class original : child{
+public static void main(string[] args){
+original o= new original();
+o.square(9);
+o.area(3);
+}
+}
+}
+
+diffrence between abstraction and encapsulation is in encasulation we are hiding data of code, in abstraction we are hiding implementation/details of code

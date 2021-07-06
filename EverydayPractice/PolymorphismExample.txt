@@ -1,0 +1,78 @@
+
+
+Polymorphism is a concept where methods with same name act diffrently
+
+actually it includes 2 types
+
+....... method over loading
+....... method overriding
+
+method overloading :  it is a concept where in a class we can have multiple methods with same name but with diffrent signature
+  1). Number of parameters
+  2). Type of parameters
+  3). Position of parameters
+
+
+Example for method overloading :
+
+class example{
+
+public int add(int a, int b){
+return a+b;
+}
+
+public int add (string a, string b){
+return a+b;
+}
+
+public int add(int a){
+return 10+a;
+}
+
+public int add ( int a, string b){
+return a+Convert.ToInt32(b);
+}
+}
+
+public original : example{
+
+public static void main(string[] args){
+original o=new original();
+o.add(2,3);                          .................... here at the run time compiler will decide which method to invoke
+o.add(2);
+o.add("ramya", "is");
+o.add(2,"ramya");
+}
+
+}
+
+
+...........................
+
+method overriding
+
+it is a concept where child class will have its own definition for all virtual methods of parent class
+
+Example :
+
+
+public class example{
+
+public virtual add(int a, int b);
+
+public virtual perimeter(int a);
+}
+
+
+public class original : example{
+
+public override add (int a, int b){
+return a+b;
+}
+
+public override perimeter(int a){   .................... like this we can povide definitions in child class
+return 4*a;
+}
+
+
+}

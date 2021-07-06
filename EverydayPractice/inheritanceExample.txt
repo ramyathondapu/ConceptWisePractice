@@ -1,0 +1,33 @@
+
+
+Inheritance is a concept used to get the features of base class into child class
+
+super class : the class which is getting inherited is super class we can call it as base class, parent class also
+
+sub class    : the class which is inheriting super class is subclass we can call it as child class extended class and derived class
+
+Reusability  : with inheritence we can resue the code present in base class also in child class we can have our own methods datatypes and all.
+
+
+example :
+
+class parent{
+  public int add(int a, int b){
+  return a+b;
+  }
+}
+
+
+class child : parent{
+
+public sub ( int a, int b){
+return a-b;
+}
+
+public static void main(string[] args){
+ child c = new child ();
+
+ c. add(2,3);      .............................. here we are able to acces parent class members also with child class instance
+ c.sub (9,8);
+}
+}

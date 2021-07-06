@@ -1,0 +1,51 @@
+Enacapsulation is a process where we are hiding data in a single line. It provides a shield so that out side of the code can not be accesed
+
+It binds data and code in a single line
+we can achieve this enpasulation by declaring all variables as private
+the members of this class can be accsed only inside the class methods
+the variable setting and getting can be accsed by get and set properties in c+
+
+example :
+
+class encapsdemo{
+private string name;
+private int age;
+
+public string studentname{
+
+get{
+return name;
+}
+
+set{
+name =value;
+}
+
+}
+
+
+public int studentage{
+get{
+return age;
+}
+
+set{
+age=value;
+}
+
+}
+
+
+}
+
+
+public class original{
+
+public static void main(string[] args){
+encapdemo e=new encapsdemo();
+
+e.studentname="ramya";
+e.studentage=16;
+console.WriteLine(e.studentname+" "+e.studentage);
+}
+}

@@ -1,0 +1,38 @@
+extension methods
+
+these are used to extend other features for existed class , 
+
+the extension methods present in a static class and these are are of static type only
+
+this first parameter declared using this keyword 
+
+public class calculator{
+public int sub(int a, int b){
+return a-b;
+}
+
+public int mul (int a, int b){
+return a*b;
+}
+
+public int div(int a, int b){
+return a%b;
+}
+}
+public static class example{
+static add (this calculator , int a, int b){
+return a+b;
+}
+
+public static void main(string[] args){
+calculator c= new calculator();
+c.add(2,3);  ................................. able to call add on calculator class as we extended its feature in extended method
+c.sub(78,67);
+c.mul(5r,5612);
+c.div(26,6);
+}
+}
+
+
+
+in place of inheritence we can use this, here we are not changing original class and for sealed class type we can use this feature.

@@ -1,0 +1,14 @@
+
+
+collections used to store the data
+
+diffrent types if collections are
+Linked list
+array list
+array
+hash table
+
+
+there are 2 types of collections
+generic 
+non generic

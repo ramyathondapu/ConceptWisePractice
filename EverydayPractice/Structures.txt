@@ -1,0 +1,32 @@
+
+
+Structure is user defined datatype only , it also has diffrent types of variables and methods in it same as like class.
+
+but classes are reference type where as structures are value type.
+
+a structure can not have parameter less constructor or destructor
+
+we can not inherit any other class or struct for a struct
+ so there is no concept of protected key word here
+
+ any change to a variable we made in class that will effect original value also because we are directly editing value in that addrss as it is reference type
+ but any change we made for struct variable with struct refrence that wont effect original value
+
+ classes have heap memory and struct have statck memory
+
+ example:
+
+ struct example{
+ 
+ int a;
+ string b;
+ bool c;
+
+ example(string b){
+ b=this.b;
+ }
+
+ public void display(){
+ console.writeline(b);
+ }
+ }
